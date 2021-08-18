@@ -6,7 +6,6 @@ I will be building a system that autogenerates a report and emails it to yoursel
 
 ## Goals
 
-* Be able to create an RMarkdown document
 * Be able to download from the Twitter data stream and understand APIs
 * Be able to schelude an email from within R
 * Understand the consequences of automatically intervening in student activity
