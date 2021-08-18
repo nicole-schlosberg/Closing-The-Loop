@@ -1,0 +1,43 @@
+---
+title: "ClosingTheLoop"
+author: "Nicole Schlosberg"
+date: "4/12/2021"
+output: html_document
+---
+```{r}
+library(ROAuth)
+library(twitteR)
+
+api_key <- "1WlsAw5YpVKTO11UgLUtnJBaF"
+
+api_secret <- "qTPUYJr0klMh2WG6bnD5tAMBlw0MiVNxznTmoiOdugpSte1wGz"
+
+access_token <- "1381376802753499147-q1OkdPodsyrfmwWHqJvxCP3lNckykv"
+
+access_token_secret <- "PrRCaE9cYxPNEqbotVZ4b0P7oK6eGi3toXACRXcGnadZH"
+
+setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)
+```
+
+### Download Tweets
+```{r}
+library(ROAuth)
+library(twitteR)
+library(RCurl)
+
+TL <- searchTwitter("learning analytics and education", n=50, since='2021-04-15', until='2021-04-21')#Make sure you change the dates here to be 6 days from today.
+TL <- do.call("rbind", lapply(TL, as.data.frame))
+```
+
+You can now look at the data that Twitter has made available and do a quick visualization of your Tweets over time.
+
+```{r}
+library(tidyr)
+counts=table(TL$screenName)
+barplot(counts, las=2,xlab = "User Names", ylab = "Number of Posts", main = "Who Said It?")
+
+#By time of day
+hist(TL$created, breaks = "d", xlab = "Time", main = "Density by Day")
+```
+
+
