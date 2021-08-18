@@ -5,7 +5,7 @@ date: "4/11/2021"
 output: html_document
 ---
 
-*WARNING: This project may not work from within China, if you are unable to install or make any of these services work please let Charles know ASAP*
+*WARNING: This project may not work from within China.*
 
 ## Twitter Setup
 
@@ -15,7 +15,7 @@ Step 2. You will then need to register a new app (we need to create an app to ac
 
 Step 3. Within R you will need to install the packages ROAuth and twitteR
 
-Step 4. Copy the following details from your Twitter App page. Don'f forget to put them in quotations!
+Step 4. Copy the following details from your Twitter App page. Put them in quotations!
 
 ```{r}
 library(ROAuth)
@@ -32,7 +32,7 @@ access_token_secret <- "PrRCaE9cYxPNEqbotVZ4b0P7oK6eGi3toXACRXcGnadZH"
 setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)
 ```
 
-You can now download Tweets but remember you can only search from the previous 6-7 days. Limit the number of tweets you are searching for if you are searching for a popular term using `n=`
+Can now download Tweets but remember you can only search from the previous 6-7 days. Limit the number of tweets you are searching for if you are searching for a popular term using `n=`
 
 ### Download Tweets
 ```{r}
