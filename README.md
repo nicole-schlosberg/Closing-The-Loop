@@ -2,7 +2,7 @@
 
 Many scholars believe that learning analytics will not demonstrate real utility until it can "Close the Loop", use data to automate decision making. A common example of this system are email generators that send emails to students in response to an activity (or lack of activity). Several universities have had some success with this strategy such as George Washington University. There are an infinite number of these lopp closing activities that could be implemented and there is a lot of work to be done understanding when they are most useful.  
 
-I will be building a system that autogenerates a report and emails it to yourself. I will be downloading data from Twitter. I setup a Twitter developer account in order to do this and have understand how an API works. Using the Twitter data that I got from setting all the connections up (loop-closing.Rmd), I created a separate RMarkdown report (ClosingTheLoop.Rmd) including several visualizations, and I saved it as an html document (ClosingTheLoop.html) to the working directory. I then set up a scheduled email.
+I will be building a system that autogenerates a report and emails it to yourself. I will be downloading data from Twitter. I setup a Twitter developer account in order to do this and have understand how an API works. Using the Twitter data that I got from setting all the connections up (loop-closing.Rmd), I created a separate RMarkdown report (ClosingTheLoop.Rmd) including several visualizations, and I saved it as an html document (ClosingTheLoop.html) to the working directory. Within the loop-closing_files folder, you will find the figures that were generated.
 
 ## Goals
 
