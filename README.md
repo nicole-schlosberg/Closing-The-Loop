@@ -11,6 +11,12 @@ I will be building a system that autogenerates a report and emails it to yoursel
 * Be able to schelude an email from within R
 * Understand the consequences of automatically intervening in student activity
 
+## Findings
+
+* Using the Twitter data I created an RMarkdown report including several visualizations, and I saved it as an html document to the working directory.
+
+*Can you set the scheduler to send an email triggered by an activity threshold on Twitter? For example, an email is sent if a certain number of Tweets are returned by your search.* Yes, if you create a if statement with the desired threshold from Twitter activity. If it meets that threshold then you can triger the scheduler to send the email.
+
 ## Utilized the following resources
 
 [Victoria, Oren, Xixuan & Meijuan discuss the complexities of closing the loop on ed tech products and review the algebra game DragonBox (dragonbox.com)](http://hudk4051.bandcamp.com/track/closing-the-loop)
