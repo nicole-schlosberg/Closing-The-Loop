@@ -13,7 +13,7 @@ I will be building a system that autogenerates a report and emails it to yoursel
 
 ## Findings
 
-* Using the Twitter data I created an RMarkdown report including several visualizations, and I saved it as an html document to the working directory.
+Using the Twitter data I created an RMarkdown report including several visualizations, and I saved it as an html document to the working directory.
 
 *Can you set the scheduler to send an email triggered by an activity threshold on Twitter? For example, an email is sent if a certain number of Tweets are returned by your search.* Yes, if you create a if statement with the desired threshold from Twitter activity. If it meets that threshold then you can triger the scheduler to send the email.
 
