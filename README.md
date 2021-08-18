@@ -2,7 +2,7 @@
 
 Many scholars believe that learning analytics will not demonstrate real utility until it can "Close the Loop", use data to automate decision making. A common example of this system are email generators that send emails to students in response to an activity (or lack of activity). Several universities have had some success with this strategy such as George Washington University. There are an infinite number of these lopp closing activities that could be implemented and there is a lot of work to be done understanding when they are most useful.  
 
-I will be building a system that autogenerates a report and emails it to yourself. I will be downloading data from Twitter. I setup a Twitter developer account in order to do this and have understand how an API works. 
+I will be building a system that autogenerates a report and emails it to yourself. I will be downloading data from Twitter. I setup a Twitter developer account in order to do this and have understand how an API works. Using the Twitter data that I got from setting all the connections up (loop-closing.Rmd), I created a separate RMarkdown report (ClosingTheLoop.Rmd) including several visualizations, and I saved it as an html document (ClosingTheLoop.html) to the working directory. I then set up a scheduled email.
 
 ## Goals
 
@@ -11,9 +11,7 @@ I will be building a system that autogenerates a report and emails it to yoursel
 * Be able to schelude an email from within R
 * Understand the consequences of automatically intervening in student activity
 
-## Findings
-
-Using the Twitter data I created an RMarkdown report including several visualizations, and I saved it as an html document to the working directory.
+## Finding
 
 *Can you set the scheduler to send an email triggered by an activity threshold on Twitter? For example, an email is sent if a certain number of Tweets are returned by your search.* Yes, if you create a if statement with the desired threshold from Twitter activity. If it meets that threshold then you can triger the scheduler to send the email.
 
